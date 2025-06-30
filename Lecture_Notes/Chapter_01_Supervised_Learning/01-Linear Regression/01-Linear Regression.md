@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/87381b0d-a184-4b07-a415-5374ce42dab5)![image](https://github.com/user-attachments/assets/9b0d048a-ebb5-4f32-9fbe-d38cb77ac80b)![image](https://github.com/user-attachments/assets/febf927e-5b60-4551-a8e3-894255b74435)# 📘 جزوه آموزشی درس یادگیری ماشین (CE 40477)
+![image](https://github.com/user-attachments/assets/87381b0d-a184-4b07-a415-5374ce42dab5)
+![image](https://github.com/user-attachments/assets/9b0d048a-ebb5-4f32-9fbe-d38cb77ac80b)
+![image](https://github.com/user-attachments/assets/febf927e-5b60-4551-a8e3-894255b74435)# 📘 جزوه آموزشی درس یادگیری ماشین (CE 40477)
 
 **موضوع: مقدمه‌ای بر رگرسیون خطی و بهینه‌سازی**
 
