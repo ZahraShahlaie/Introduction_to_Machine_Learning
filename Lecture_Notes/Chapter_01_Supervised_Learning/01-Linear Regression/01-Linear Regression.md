@@ -374,8 +374,9 @@ $\nabla_{w}J(w) = 0 \Rightarrow X^{\top}Xw = X^{\top}y \Rightarrow w=(X^{\top}X)
 ![image](https://github.com/user-attachments/assets/b828f31b-6e21-46e1-9bb8-f95a32a21de8)
 ![image](https://github.com/user-attachments/assets/a800650e-4b62-4f60-a1fe-a8d7a3377ed6)
 
+ پس به طور کل می توان گفت:
 
-
+![image](https://github.com/user-attachments/assets/474ff703-25f3-4b1e-961c-fed314bc2c20)
 
 
 
@@ -399,6 +400,8 @@ $\nabla_{w}J(w) = 0 \Rightarrow X^{\top}Xw = X^{\top}y \Rightarrow w=(X^{\top}X)
     * می‌تواند از نظر محاسباتی برای مجموعه‌های داده بزرگ پرهزینه و برای برخی کاربردها (مانند یادگیری آنلاین) غیرممکن باشد.
 * **Mini-batch gradient descent:** زیرمجموعه‌های کوچک و تصادفی (مینی-بچ‌ها) از مجموعه آموزشی را در هر تکرار پردازش می‌کند.
     * بین کارایی گرادیان دسته‌ای و به‌روزرسانی‌های مکرر SGD تعادل برقرار می‌کند.
+  ![image](https://github.com/user-attachments/assets/9d7ac7ff-494a-4670-9659-9ce3e28cbb2b)
+
 * **Stochastic gradient descent (SGD):** تنها یک مثال آموزشی را در هر تکرار پردازش می‌کند.
     * پارامترهای مدل را به طور مکرر به‌روزرسانی می‌کند که می‌تواند منجر به همگرایی سریع‌تر شود.
 * **مثال: رگرسیون خطی با تابع هزینه SSE:** $w^{t+1} = w^{t} + \eta(y^{(i)} - w^{\top}x^{(i)})x^{(i)}$ (که $x^{(i)}$ مشاهده $i$-ام است).
@@ -406,19 +409,23 @@ $\nabla_{w}J(w) = 0 \Rightarrow X^{\top}Xw = X^{\top}y \Rightarrow w=(X^{\top}X)
 * **یادگیری آنلاین با SGD:** اغلب SGD بسیار سریع‌تر از Batch gradient descent به مینیمم نزدیک می‌شود.
     * با این حال، ممکن است هرگز دقیقاً به مینیمم همگرا نشود و پارامترها در اطراف مینیمم نوسان کنند.
     * در عمل، اکثر مقادیر نزدیک به مینیمم، تقریب‌های منطقی خوبی برای مینیمم واقعی خواهند بود.
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/7b32eeea-a6d3-4a26-bce5-482939e9331f)
 
 ---
 
 ### **5. رگرسیون چندجمله‌ای (Polynomial Regression)**
 
 این بخش به چگونگی تعمیم رگرسیون خطی برای مدل‌سازی روابط غیرخطی می‌پردازد.
+![image](https://github.com/user-attachments/assets/a2634b03-2424-4df5-b203-bc0d7b761659)
+
 
 #### **5.1. محدودیت‌های رگرسیون خطی (Limitations of linear regression)**
 
 ممکن است بهترین خط برازش شده، همچنان با الگوی واقعی نمونه‌ها فاصله زیادی داشته باشد.
 
 یک خط نمی‌تواند برای تعمیم روی نمونه‌های نویزی که الگوی غیرخطی دارند (مانند نمودار در صفحه 66 PDF) مناسب باشد.
+
+![image](https://github.com/user-attachments/assets/2c9dff15-1d03-4410-a43e-193c4b791b95)
 
 #### **5.2. فراتر از رگرسیون خطی (Beyond Linear Regression)**
 
@@ -429,10 +436,14 @@ $\nabla_{w}J(w) = 0 \Rightarrow X^{\top}Xw = X^{\top}y \Rightarrow w=(X^{\top}X)
 * **یادگیری یک رگرسیون خطی بر روی ویژگی‌های تبدیل‌شده:**
     * با اعمال رگرسیون خطی بر روی بردارهای ویژگی تبدیل‌شده، می‌توانیم روابط پیچیده و غیرخطی را مدل‌سازی کنیم.
     * این رویکرد سادگی و قابلیت تفسیر رگرسیون خطی را حفظ می‌کند، در حالی که انعطاف‌پذیری آن را گسترش می‌دهد.
+  ![image](https://github.com/user-attachments/assets/e91fdba2-74da-48ee-b86b-50ebb4004f75)
+
 
 * **مثال (صفحه 69 PDF):** تبدیل یک دایره نویزی (که خطی نیست) به فضایی که در آن با رگرسیون خطی قابل مدل‌سازی است (با تغییر پایه‌های $[1,x,y]$ به $[1,x^2,y^2]$).
+* ![image](https://github.com/user-attachments/assets/ad199801-74e8-47b2-8a08-eb9e9582f247)
 
-#### **5.3. رگرسیون چندجمله‌ای: تک‌متغیره (Polynomial regression: Univariate)**
+
+#### **5.3. رگرسیون چندجمله‌ای: تک‌متغیره (Polynomial regression: Univariate)**و 
 
 **فرضیه رگرسیون چندجمله‌ای:** یک رگرسیون مرتبه $m$ (Degree $m$ regression) به صورت:
 
@@ -448,6 +459,12 @@ $h(x;w)=w_{0}+w_{1}x^{1}+ \dots +w_{m-1}x^{m-1}+w_{m}x^{m}$
 
 **راه‌حل تحلیلی:** رگرسیون چندجمله‌ای نیز دارای یک راه‌حل تحلیلی (closed-form solution) است: $\hat{w}=(X'^{\top}X')^{-1}X'^{\top}y$.
 
+و داریم:
+
+![image](https://github.com/user-attachments/assets/06d6a1e2-76fb-4079-a097-76c56c0babea)
+![image](https://github.com/user-attachments/assets/285bbba2-8327-4478-b835-3790d55b44f7)
+![image](https://github.com/user-attachments/assets/a61e3589-7d31-4ba0-afd1-86b84c05e46e)
+
 #### **5.5. آموزش و اعتبارسنجی (Training and Validation)**
 
 برای تمایز بهتر بین رگرسیون خطی و رگرسیون چندجمله‌ای، نشان خواهیم داد که مدل خطی نمی‌تواند به خوبی تعمیم پیدا کند.
@@ -455,9 +472,36 @@ $h(x;w)=w_{0}+w_{1}x^{1}+ \dots +w_{m-1}x^{m-1}+w_{m}x^{m}$
 نمونه‌ها به دو زیرمجموعه تقسیم می‌شوند: **مجموعه داده آموزش (Train dataset)** که برای آموزش مدل رگرسیون استفاده می‌شود، و **مجموعه داده اعتبارسنجی (Validation dataset)** که برای یافتن بهترین مدل رگرسیون برای یک کاربرد استفاده می‌شود.
 
 اگر یک مدل بتواند به خوبی در مجموعه اعتبارسنجی تعمیم پیدا کند، کاندیدای خوبی خواهد بود.
+![image](https://github.com/user-attachments/assets/5aeb5316-4d44-4916-9d60-a16d95eef36a)
+
 
 #### **5.6. مثال رگرسیون چندجمله‌ای (Polynomial regression: example)**
 
 با استفاده از نمونه‌های نویزی نشان داده شده در صفحه 74 PDF، می‌توان رگرسیون خطی و رگرسیون درجه دوم (Quadratic Regression) را برازش داد.
+![image](https://github.com/user-attachments/assets/1b417f93-f16c-4680-9e30-a8d04d974cb5)
+
 
 برازش هر دو رگرسیون درجه دوم و خطی، قدرت رگرسیون چندجمله‌ای را در تعمیم برای الگوهای پیچیده‌تر نشان می‌دهد. مدل درجه دوم (منحنی) به وضوح بهتر از مدل خطی (خط راست) برازش پیدا می‌کند و تعمیم‌پذیری بهتری دارد.
+![image](https://github.com/user-attachments/assets/be01ba0f-0b74-4d64-9a3b-acae094affed)
+
+
+
+ادامه :
+
+فرض کن 5 تا نقطه داریم و یه وضوح یک چند جمله ای درجه 2 برای تخمن زدن کافیه ، اگر ب چند جمله ای درجه 5 ارتقا بدیم و از همه نقاط بگدره به شکل زیر میشه :(وقتی 5 نقطه داریم درجه 5 مطمئن میشه از تک تک نقاط رد شه ، درجه 2 یک خطایی رو میپذیره و فرم رو حقط میکنه
+![image](https://github.com/user-attachments/assets/0f56b71c-0ab6-4365-90af-0bb14d287570)
+ اکر یک نققطه جدید بدم  درجه 5 ایه نمیتونه تخمین بزنه چرا ک داده های قبلی را حفظ کرده : overfit 
+ ![image](https://github.com/user-attachments/assets/fe8c5cd4-88c7-45e7-96e6-9ba86911e863)
+
+
+
+,  underfit:
+ انگار یک تخمین خوب اولبه هم نداریم 
+ ![image](https://github.com/user-attachments/assets/0e713308-8319-4c64-ac66-51235932923c)
+
+
+
+و حالا سوال ؟؟ از کجا بفهمم درجه جنذ باشه ؟
+![image](https://github.com/user-attachments/assets/2e5a7e5e-7cd2-4653-a5f1-0426b669d289)
+
+
