@@ -443,6 +443,7 @@ $\nabla_{w}J(w) = 0 \Rightarrow X^{\top}Xw = X^{\top}y \Rightarrow w=(X^{\top}X)
 
 * **مثال (صفحه 69 PDF):** تبدیل یک دایره نویزی (که خطی نیست) به فضایی که در آن با رگرسیون خطی قابل مدل‌سازی است (با تغییر پایه‌های $[1,x,y]$ به $[1,x^2,y^2]$).
 * ![image](https://github.com/user-attachments/assets/ad199801-74e8-47b2-8a08-eb9e9582f247)
+![image](https://github.com/user-attachments/assets/228ab328-f702-48b3-aa4c-6213bd30e879)
 
 
 #### **5.3. رگرسیون چندجمله‌ای: تک‌متغیره (Polynomial regression: Univariate)**و 
@@ -501,6 +502,7 @@ $h(x;w)=w_{0}+w_{1}x^{1}+ \dots +w_{m-1}x^{m-1}+w_{m}x^{m}$
  انگار یک تخمین خوب اولبه هم نداریم 
  ![image](https://github.com/user-attachments/assets/0e713308-8319-4c64-ac66-51235932923c)
 
+![image](https://github.com/user-attachments/assets/e0197cc8-621f-42bb-80b0-f3126ba5660d)
 
 
 و حالا سوال ؟؟ از کجا بفهمم درجه جنذ باشه ؟
