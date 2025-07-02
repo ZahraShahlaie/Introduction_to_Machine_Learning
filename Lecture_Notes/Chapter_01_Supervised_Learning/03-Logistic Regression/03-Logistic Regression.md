@@ -134,6 +134,8 @@
 
 ---
 یاداوری: احتمال 
+
+
 ![image7](https://github.com/ZahraShahlaie/Introduction_to_Machine_Learning/raw/main/Lecture_Notes/Chapter_01_Supervised_Learning/03-Logistic%20Regression/images/07.png)
 
 
@@ -174,7 +176,7 @@ $P = \frac{12}{16} = \frac{3}{4} = 0.75$
 مقدار تخمینی $P$ (که با $\hat{P}$ نشان داده می‌شود) برابر با $0.75$ است. این نتیجه با شهود ما مطابقت دارد: اگر 12 بار از 16 پرتاب شیر بیاید، محتمل‌ترین احتمال شیر آمدن سکه $12/16$ است.
 MLE به همین سادگی است. این تکنیک می‌تواند برای تخمین پارامترهای توزیع‌های مختلف (مانند میانگین و واریانس در توزیع نرمال، یا پارامترهای توزیع بتا و پواسون) نیز به کار رود.
 
-https://github.com/ZahraShahlaie/Introduction_to_Machine_Learning/blob/main/Lecture_Notes/Chapter_01_Supervised_Learning/03-Logistic%20Regression/images/08.png
+![image08](https://github.com/ZahraShahlaie/Introduction_to_Machine_Learning/raw/main/Lecture_Notes/Chapter_01_Supervised_Learning/03-Logistic%20Regression/images/08.png)
 
 
 ---
