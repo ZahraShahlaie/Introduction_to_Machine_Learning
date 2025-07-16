@@ -10,6 +10,3 @@ Class videos and additional resources can be found on the [SharifML website](htt
 
 Feel free to use this content, provided you properly cite both the course and this GitHub repository. For more details, see the [Creative Commons BY license](https://creativecommons.org/licenses/by/4.0/).
 ---)
-
-## درباره درس
-درس CE 40477 به بررسی مفاهیم پایه و پیشرفته یادگیری ماشین می‌پردازد، شامل الگوریتم‌ها، مدل‌ها و کاربردهای عملی.
