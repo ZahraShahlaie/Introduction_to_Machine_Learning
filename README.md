@@ -9,16 +9,7 @@ For course materials from previous semesters, please visit the [Previous Semeste
 Class videos and additional resources can be found on the [SharifML website](http://www.SharifML.ir) (Persian language).
 
 Feel free to use this content, provided you properly cite both the course and this GitHub repository. For more details, see the [Creative Commons BY license](https://creativecommons.org/licenses/by/4.0/).
----
-# 📘 جزوه آموزشی درس یادگیری ماشین (CE 40477)
-
-این ریپازیتوری شامل جزوات و منابع آموزشی درس یادگیری ماشین (CE 40477) است که برای دانشجویان و علاقه‌مندان به یادگیری ماشین طراحی شده است.
-
-## فهرست مطالب
-- [فصل اول: مقدمه‌ای بر یادگیری ماشین](notes/chapter1.md)
-- [فصل دوم: الگوریتم‌های نظارت‌شده](notes/chapter2.md)
-- [فصل سوم: الگوریتم‌های بدون نظارت](notes/chapter3.md)
-- [منابع و تمرین‌ها](resources/exercises.md)
+---)
 
 ## درباره درس
 درس CE 40477 به بررسی مفاهیم پایه و پیشرفته یادگیری ماشین می‌پردازد، شامل الگوریتم‌ها، مدل‌ها و کاربردهای عملی.
